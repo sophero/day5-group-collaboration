@@ -1,10 +1,19 @@
+
 body{
 	box-sizing:border-box;
+	margin-left:0px;
+	margin-right:0px;
 }
+* {
+	box-sizing: border-box;
+
+}
+
 .navbar{
 	height:125px;
-	border-bottom:2px solid black;
+	/*border-bottom:2px solid black;*/
 	padding-bottom:5px;
+	margin-left:0px;
 
 }
 .button{
@@ -114,6 +123,49 @@ article {
 	padding: 10px;
 }
 
-article p{
+a {
+	text-decoration: none;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	background-color: #000;
+	width: 100vw;
+	height: 50px;
+}
+
+.footer-nav {
+	display: flex;
+	flex-direction: row-reverse;
+	font-family: verdana, sans-serif; 
+	font-size: 0.8em;
+	list-style-type: none;
+}
+
+.footer-nav__item {
+	display: inline-block;
+	margin: 3px 15px;
+	padding: 0 8px;
+}
+
+.footer-nav__item a {
+	color: #eb9800;
+}
+
+
+
+.heroimage{
+	height:600px;
+	width:100%;
+	margin-top:15px;
+	margin-left:0px;
+	background-image:url("homelesshero.jpg");
+	background-size:cover;
+	border-top:2px solid black;
+	border-bottom:2px solid black;
+}
+.footer-nav__item a:hover {
+	color: #ffbd46;
 
 }
