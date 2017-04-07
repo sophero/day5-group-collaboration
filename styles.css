@@ -1,7 +1,8 @@
 
-body{
+body {
 	margin: 0;
 }
+
 * {
 	box-sizing: border-box;
 
@@ -138,7 +139,6 @@ body{
 }
 
 article {
-	float: left;
 	width: 70%;
 	margin: 10px;
 	border: 1px solid black;
@@ -150,8 +150,7 @@ a {
 }
 
 footer {
-	position: absolute;
-	bottom: 0;
+	bottom: 0px;
 	margin: 0;
 	background-color: #000;
 	width: 100vw;
@@ -163,6 +162,7 @@ footer {
 	font-size: 0.85em;
 	list-style-type: none;
 	margin-right: 15px;
+	padding-top: 5px;
 }
 
 .footer__nav__item {
@@ -181,10 +181,8 @@ footer {
 }
 
 .footer__social {
-	position: absolute;
-	bottom: 5px;
-	left: 10px;
-	margin: 0;
+	margin-left: 15px;
+	padding-top: 5px;
 }
 
 .footer__social__item {
