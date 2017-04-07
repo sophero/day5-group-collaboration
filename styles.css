@@ -53,5 +53,56 @@ body{
 	color:white;
 	margin-top:35px;
 	margin-left:25%;
+}
 
+.sidebar {
+	position: fixed;
+	right: 40px;
+	top: 150px;
+	/*float: right;*/
+	width: 200px;
+	border: 3px solid grey;
+	border-radius: 5%;
+	transition: all 0.8s;
+
+}
+
+.sidebar:hover {
+	box-shadow: 5px 10px grey; /*FADE THIS SHADOW*/
+
+}
+
+.article {
+	margin: 10px auto;
+	width: 90%;
+	border: 1px solid grey;
+	border-radius: 5%;
+	text-align: center;
+	transition: all 1.2s;
+}
+
+.article:hover {
+	box-shadow: 2px 4px grey;
+}
+
+.sidebar a{
+	text-decoration: none;
+}
+
+.article-pic{
+	width: 180px;
+	height: 150px;
+	background-position: center;
+	background-size: 180px 150px;
+	border-radius: 5%;
+}
+
+.article-1-pic {
+	background-image: url("https://img.rt.com/files/2016.03/original/56f52214c46188a2438b4587.jpg");
+}
+.article-2-pic {
+	background-image: url("http://www.socialsolutions.com/wp-content/uploads/2016/06/bigstock-Homeless-Senior-Man-Sleeping-O-76657106.jpg");
+}
+.article-3-pic {
+	background-image: url("http://www.coalitionforthehomeless.org/wp-content/uploads/2014/03/ProvenSolutions7.jpg");
 }
