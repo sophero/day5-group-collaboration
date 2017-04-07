@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+body{
+	margin-left:0px;
+	margin-right:0px;
+	
+	margin-bottom: 0px;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -150,13 +158,20 @@ a {
 	text-decoration: none;
 }
 
+.about h1{
+	text-align: center;
+}
+
 footer {
-	bottom: 0;
 	margin: 0;
 	background-color: #000;
 	width: 100vw;
 	height: 50px;
-	clear:both;
+	margin:0 auto;
+	border: 2px solid orange;
+	background-color: #000;
+	width: 100vw;
+	height: 50px;
 }
 
 .footer__nav {
@@ -213,4 +228,65 @@ footer {
 
 .footer-nav__item a:hover {
 	color: #ffbd46;
+}
+
+.articlescontainer{
+	height:500px;
+	margin-top:40px;
+	
+
+}
+.article1, .article2, .article3{
+	height:495px;
+	width:400px;
+	display:inline-block;
+	
+	border-radius:10px;
+}
+.article1{
+	float:left;
+}
+.article3{
+	float:right;
+}
+.article2{
+	margin:0 auto;
+	display:block;
+}
+.artpic1, .artpic2, .artpic3{
+	height:200px;
+	width:100%;
+	background-color:green;
+	background-size:cover;
+	border:2px solid black;
+	border-radius:10px;
+
+}
+.artpic1{
+	background-image:url("article2pic.jpg");
+}
+.artpic2{
+	background-image:url("article1pic.jpg");
+}
+.artpic3{
+	background-image:url("http://www.coalitionforthehomeless.org/wp-content/uploads/2014/03/ProvenSolutions7.jpg");
+}
+.arttext1, .arttext2, .arttext3{
+	height:200px;
+	width:100%;
+	border:2px solid black;
+	border-radius:10px;
+	padding:10px 30px 10px 30px;
+	margin-top:0px;
+
+	
+}
+.articlespacer{
+	height:300px;
+	text-align:center;
+	padding-top:130px;
+}
+.articlelink{
+	text-decoration:none;
+	color:black;
 }
