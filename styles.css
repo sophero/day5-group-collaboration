@@ -1,18 +1,22 @@
-
+<<<<<<< HEAD
 body{
 	margin-left:0px;
 	margin-right:0px;
 	
 	margin-bottom: 0px;
 }
+
 * {
 	box-sizing: border-box;
+}
 
+body{
+	margin-left:0px;
+	margin-right:0px;
 }
 
 .navbar{
 	height:125px;
-	/*border-bottom:2px solid black;*/
 	padding-bottom:5px;
 	margin-left:0px;
 
@@ -27,6 +31,7 @@ body{
 	margin-top:50px;
 
 }
+
 .logo{
 	float:left;
 	clear:left;
@@ -37,9 +42,11 @@ body{
 	margin-left:35%;
 	display:inline-block;
 }
+
 .firstbutton{
 	margin-left:60px;
 }
+
 .donate{
 	height:100px;
 	width:200px;
@@ -67,9 +74,8 @@ body{
 
 .sidebar {
 	position: fixed;
-	right: 40px;
+	right: 30px;
 	top: 150px;
-	/*float: right;*/
 	width: 200px;
 	border: 3px solid grey;
 	border-radius: 5%;
@@ -82,7 +88,7 @@ body{
 
 }
 
-.article {
+.article-link {
 	margin: 10px auto;
 	width: 90%;
 	border: 1px solid grey;
@@ -91,7 +97,7 @@ body{
 	transition: all 1.2s;
 }
 
-.article:hover {
+.article-link:hover {
 	box-shadow: 2px 4px grey;
 }
 
@@ -103,7 +109,7 @@ body{
 	width: 180px;
 	height: 150px;
 	background-position: center;
-	background-size: 180px 150px;
+	background-size: cover;
 	border-radius: 5%;
 }
 
@@ -117,11 +123,19 @@ body{
 	background-image: url("http://www.coalitionforthehomeless.org/wp-content/uploads/2014/03/ProvenSolutions7.jpg");
 }
 
+article {
+	width: 70%;
+	margin: 10px;
+	border: 1px solid black;
+	padding: 10px;
+}
+
 a {
 	text-decoration: none;
 }
 
 footer {
+
 	/*position: absolute;*/
 	bottom: 0px;
 	background-color: #000;
@@ -130,6 +144,13 @@ footer {
 	margin:0 auto;
 	border: 2px solid orange;
 	margin-bottom:0px;
+
+	position: absolute;
+	background-color: #000;
+	width: 100vw;
+	height: 50px;
+	clear:both;
+
 }
 
 .footer-nav {
