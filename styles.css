@@ -146,7 +146,7 @@ footer {
 
 .footer__nav {
 	font-family: verdana, sans-serif; 
-	font-size: 0.8em;
+	font-size: 0.85em;
 	list-style-type: none;
 	margin-right: 15px;
 }
@@ -180,4 +180,9 @@ footer {
 	height: 32px;
 	background-size: contain;
 	background-position: center;
+}
+
+.footer__social__item:hover {
+	border: 2px solid white;
+	border-radius: 50%;
 }
