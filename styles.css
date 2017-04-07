@@ -126,6 +126,10 @@ a {
 	text-decoration: none;
 }
 
+.about h1{
+	text-align: center;
+}
+
 footer {
 	position: absolute;
 	background-color: #000;
