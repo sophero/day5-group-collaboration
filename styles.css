@@ -1,10 +1,13 @@
 body{
 	box-sizing:border-box;
+	margin-left:0px;
+	margin-right:0px;
 }
 .navbar{
 	height:125px;
-	border-bottom:2px solid black;
+	/*border-bottom:2px solid black;*/
 	padding-bottom:5px;
+	margin-left:0px;
 
 }
 .button{
@@ -54,4 +57,14 @@ body{
 	margin-top:35px;
 	margin-left:25%;
 
+}
+.heroimage{
+	height:600px;
+	width:100%;
+	margin-top:15px;
+	margin-left:0px;
+	background-image:url("homelesshero.jpg");
+	background-size:cover;
+	border-top:2px solid black;
+	border-bottom:2px solid black;
 }
