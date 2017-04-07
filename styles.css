@@ -1,0 +1,32 @@
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+footer {
+	background-color: #000;
+	width: 100vw;
+	height: 100px;
+}
+
+.footer-nav {
+	font-family: verdana, sans-serif; 
+	font-size: 0.8em;
+	list-style-type: none;
+}
+
+.footer-nav__item {
+	display: inline-block;
+	margin: 10px 20px;
+}
+
+.footer-nav__item a {
+	color: #eb9800;
+}
+
+.footer-nav__item a:hover {
+	color: #ffbd46;
+}
