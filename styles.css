@@ -1,0 +1,57 @@
+body{
+	box-sizing:border-box;
+}
+.navbar{
+	height:125px;
+	border-bottom:2px solid black;
+	padding-bottom:5px;
+
+}
+.button{
+	text-decoration:none;
+	font-size:1.30rem;
+	color:#f26500;
+	font-family:"Raleway",Helvetica,Arial,sans-serif;
+	padding:10px;
+	float:left;
+	margin-top:50px;
+
+}
+.logo{
+	float:left;
+	clear:left;
+	height:125px;
+	width:125px;
+	background-image:url("homeless.PNG");
+	background-size:100% 100%;
+	margin-left:35%;
+	display:inline-block;
+}
+.firstbutton{
+	margin-left:60px;
+}
+.donate{
+	height:100px;
+	width:200px;
+	border:2px solid black;
+	border-radius:6px;
+	background-color:#f26500;
+	float:right;
+	font-size:30px;	
+	font-family:"Raleway",Helvetica,Arial,sans-serif;
+	color:white;
+	margin-right:10%;
+	margin-top:15px;
+	
+}
+.donatebutton{
+	text-decoration:none;
+	display:inline-block;
+	text-align:center;
+	font-size:30px;	
+	font-family:"Raleway",Helvetica,Arial,sans-serif;
+	color:white;
+	margin-top:35px;
+	margin-left:25%;
+
+}
