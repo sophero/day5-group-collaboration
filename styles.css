@@ -1,17 +1,16 @@
+html {
+	height: 100%;
+}
+
 body{
 	margin-left:0px;
 	margin-right:0px;
-	
 	margin-bottom: 0px;
+	position: relative;
 }
 
 * {
 	box-sizing: border-box;
-}
-
-body{
-	margin-left:0px;
-	margin-right:0px;
 }
 
 #facebook {
@@ -154,46 +153,36 @@ a {
 
 footer {
 	margin: 0;
+	position: absolute;
+	bottom: 0;
 	background-color: #000;
 	width: 100vw;
 	height: 50px;
-	margin:0 auto;
 	border: 2px solid orange;
-	background-color: #000;
-	width: 100vw;
-	height: 50px;
 }
 
-.footer__nav {
+.footer__nav-item {
 	font-family: verdana, sans-serif; 
 	font-size: 0.85em;
 	list-style-type: none;
-	margin-right: 15px;
-	padding-top: 5px;
-}
-
-.footer__nav__item {
 	display: inline-block;
 	float: right;
-	margin: 3px 15px;
+	line-height: 46px;
+	margin: 0 15px 0 0;
 	padding: 0 8px;
 }
 
-.footer__nav__item a {
+.footer__nav-item a {
 	color: #eb9800;
 }
 
-.footer__nav__item a:hover {
+.footer__nav-item a:hover {
 	color: #ffbd46;
-}
-
-.footer__social {
-	margin-left: 15px;
 }
 
 .footer__social__item {
 	display: inline-block;
-	margin: 0 4px;
+	margin: 7px 5px;
 	width: 32px;
 	height: 32px;
 	background-size: contain;
