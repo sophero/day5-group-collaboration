@@ -36,12 +36,18 @@ body{
 #youtube {
 	background-image: url('images/social-youtube.png');
 }
-
+.plsscrolldown{
+	text-align:center;
+	color:grey;
+}
 .navbar{
-	height:125px;
-	padding-bottom:5px;
+	height:135px;
+	padding-bottom:15px;
 	margin-left:0px;
-
+	position:fixed;
+	width:100%;
+	background-color:white;
+	top:0px;
 }
 .button{
 	text-decoration:none;
@@ -51,6 +57,7 @@ body{
 	padding:10px;
 	float:left;
 	margin-top:50px;
+	
 }
 .button:hover{
 	color:orange;
@@ -73,8 +80,8 @@ body{
 }
 
 .donate{
-	height:100px;
-	width:200px;
+	height:80px;
+	width:175px;
 	border:2px solid black;
 	border-radius:6px;
 	background-color:#f26500;
@@ -83,7 +90,7 @@ body{
 	font-family:"Raleway",Helvetica,Arial,sans-serif;
 	color:white;
 	margin-right:10%;
-	margin-top:15px;
+	margin-top:30px;
 
 }
 .donate:hover{
@@ -96,8 +103,8 @@ body{
 	font-size:30px;	
 	font-family:"Raleway",Helvetica,Arial,sans-serif;
 	color:white;
-	margin-top:35px;
-	margin-left:25%;
+	margin-top:25px;
+	margin-left:21%;
 }
 
 .sidebar {
@@ -203,12 +210,13 @@ footer {
 .heroimage{
 	height:600px;
 	width:100%;
-	margin-top:15px;
+	margin-top:135px;
 	margin-left:0px;
 	background-image:url("homelesshero.jpg");
 	background-size:cover;
 	border-top:2px solid black;
 	border-bottom:2px solid black;
+
 }
 
 .footer-nav__item a:hover {
