@@ -350,3 +350,43 @@ footer {
 	border-radius: 3px;
 }
 
+
+
+/* Extra Wide Desktops*/
+@media all and (min-width: 1200px) {
+
+}
+
+/* Phone in landscape mode, small tablet */
+@media all and (max-width: 767px) {
+
+	footer {
+		height: 86px;
+		border-left: none;
+		border-right: none;
+	}
+
+	.footer__nav-item {
+		float: left;
+		margin: 0 0 0 15px;
+		line-height: 36px;
+	}
+
+	.footer__social__container {
+		clear: both;
+		display: flex;
+		justify-content: center;
+	}
+
+	.footer__nav__container {
+		display: flex;
+		justify-content: space-around;
+	}
+
+}
+
+/* Smaller Phone, phone in portrait mode */
+@media all and (max-width: 480px) {
+
+}
+
