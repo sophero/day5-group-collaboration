@@ -29,7 +29,10 @@ body{
 	padding:10px;
 	float:left;
 	margin-top:50px;
-
+}
+.button:hover{
+	color:orange;
+	transition:.25s;
 }
 
 .logo{
@@ -59,7 +62,10 @@ body{
 	color:white;
 	margin-right:10%;
 	margin-top:15px;
-	
+
+}
+.donate:hover{
+	background-color:orange;
 }
 .donatebutton{
 	text-decoration:none;
