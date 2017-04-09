@@ -5,8 +5,49 @@
 	<link rel=“stylesheet” type=“text/css” href=“https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css“>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript">
+		
+
+		function MyFunction(){
+			
+			
+			
+			
+			
+				
+				document.getElementById("slide1").style.display="block";
+				document.getElementById("slide3").style.display="none";
+				setTimeout(function(){
+    			SecondFunction();
+				}, 4000);
+				
+			
+			}
+		
+		function SecondFunction(){
+			document.getElementById("slide2").style.display="block";
+			document.getElementById("slide1").style.display="none";
+			setTimeout(function(){
+    			ThirdFunction();
+				}, 4000);
+
+		}
+		function ThirdFunction(){
+			
+			document.getElementById("slide3").style.display="block";
+			document.getElementById("slide2").style.display="none";
+			setTimeout(function(){
+    			MyFunction();
+				}, 4000);
+		}
+		
+
+
+
+	</script>
 </head>
-<body>
+<body onload="MyFunction()">
+
 	<div class="navbar">
 		<div class="logo"></div>
 		<span class="index"><a class="button firstbutton" href="index.html">Home</a></span>
@@ -23,7 +64,18 @@
 		<h1 class="plsscrolldown">Please scroll down to learn more</h1>
 	</div>
 	<div class="articlespacer">
-		<h1>We are the forgotten people...</h1>
+		<h1>Please support our city's homeless population...</h1>
+	</div>
+	<div class="slideshow" >
+	
+	<div class="slideshowcontainer">
+		<div id="slide1" class= "myslides slide1"></div>
+		<div id="slide2" class="myslides slide2"></div>
+		<div id="slide3" class="myslides slide3"></div>
+	</div>
+	</div>
+	<div class="articlespacer">
+		<h2 class="fullartexp">Click on the pictures below to read the full articles</h2>
 	</div>
 	<div class="articlescontainer">
 		
