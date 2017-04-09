@@ -3,9 +3,7 @@ html {
 }
 
 body{
-	margin-left:0px;
-	margin-right:0px;
-	margin-bottom: 0px;
+	margin: 135px 0 0 0;
 	position: relative;
 }
 
@@ -160,7 +158,7 @@ a {
 	text-decoration: none;
 }
 
-.about h1{
+.about h2{
 	text-align: center;
 }
 
@@ -282,4 +280,27 @@ footer {
 .articlelink{
 	text-decoration:none;
 	color:black;
+}
+
+.about-gallery__container {
+	width: 90%;
+	margin: 20px auto 0 auto;
+	padding-bottom: 60px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.about-gallery__item {
+	width: 25vw;
+	height: 30vw;
+	margin: 15px;
+	background-position: center;
+	background-size: cover;
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+.about-pic1 {
+	background-image: url('');
 }
