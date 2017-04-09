@@ -158,7 +158,8 @@ a {
 	text-decoration: none;
 }
 
-.about h2{
+.about {
+	padding-top: 15px;
 	text-align: center;
 }
 
@@ -294,13 +295,9 @@ footer {
 .about-gallery__item {
 	width: 25vw;
 	height: 30vw;
-	margin: 15px;
+	margin: 25px 15px;
 	background-position: center;
 	background-size: cover;
 	border: 1px solid black;
 	border-radius: 3px;
-}
-
-.about-pic1 {
-	background-image: url('');
 }
