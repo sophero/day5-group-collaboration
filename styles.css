@@ -258,7 +258,8 @@ a {
 .artpic1, .artpic2, .artpic3{
 	height:150px;
 	background-color:green;
-	background-size:100% 100%;
+	background-size: cover;
+	background-position: center;
 	border:2px solid black;
 	border-radius:10px;
 
@@ -309,7 +310,8 @@ a {
 	margin-top:135px;
 	margin-left:auto;
 
-	background-size:100% 100%;
+	background-size: cover;
+	background-position: top;
 	border-top:2px solid black;
 	border-bottom:2px solid black;
 
@@ -320,7 +322,8 @@ a {
 	
 }
 .slide1, .slide2, .slide3{
-	background-size:100% 100%;
+	background-size: cover;
+	background-position: center;
 	margin:0 auto;
 	height:397px;
 }
