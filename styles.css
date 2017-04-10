@@ -366,10 +366,34 @@ footer {
 	border-radius: 3px;
 }
 
+.about-gallery__item{
+	background-size:cover;
+}
+.about-pic1{
+	background-image: url("about1.jpg");
+}
+.about-pic2{
+	background-image: url("about2.jpg");
+}
+.about-pic3{
+	background-image: url("about3.jpg");
+}
+.about-pic4{
+	background-image: url("about4.jpg");
+}
+.about-pic5{
+	background-image: url("about5.jpg");
+}
+.about-pic6{
+	background-image: url("about6.jpg");
+}
+
+
 .bottom-article-spacer {
 	clear: both;
 	height: 70px;
 }
+
 
 @media all and (min-width:1200px){
 	.article1, .article2, .article3{
