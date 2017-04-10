@@ -6,61 +6,49 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="text/javascript">
-		
-
 		function MyFunction(){
-			
-			
-			
-			
-			
-				
 				document.getElementById("slide1").style.display="block";
 				document.getElementById("slide3").style.display="none";
 				setTimeout(function(){
     			SecondFunction();
 				}, 4000);
-				
-			
 			}
-		
 		function SecondFunction(){
 			document.getElementById("slide2").style.display="block";
 			document.getElementById("slide1").style.display="none";
 			setTimeout(function(){
     			ThirdFunction();
 				}, 4000);
-
 		}
 		function ThirdFunction(){
-			
 			document.getElementById("slide3").style.display="block";
 			document.getElementById("slide2").style.display="none";
 			setTimeout(function(){
     			MyFunction();
 				}, 4000);
 		}
-		
-
-
-
 	</script>
 </head>
 <body onload="MyFunction()">
 
 	<div class="navbar">
-		<div class="logo"></div>
-		<span class="index"><a class="button firstbutton" href="index.html">Home</a></span>
-		<span class="blog"><a class="button" href="blog.html">Blog</a></span>
-		<span class="about"><a class="button" href="about.html">About</a></span>
+		<div class="navimagecontainer">
 		<a href="donate.html">
 			<div class="donate">
 				<p class="donatebutton">Donate</p>
 			</div>
 		</a>
+		<div class="logo"></div>
+		<span class="index"><a class="button firstbutton" href="index.html">Home</a></span>
+		<span class="blog"><a class="button" href="blog.html">Blog</a></span>
+		<span class="about"><a class="button" href="about.html">About</a></span>
+		
 	</div>
+	</div>
+	<div>
 	<div class="heroimage">
 		<h1 class="plsscrolldown">Please scroll down to learn more</h1>
+	</div>
 	</div>
 	<div class="articlespacer">
 		<h1>Please support our city's homeless population...</h1>

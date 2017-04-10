@@ -69,12 +69,17 @@ body{
 	width:125px;
 	background-image:url("homeless.PNG");
 	background-size:100% 100%;
-	margin-left:35%;
+	
 	display:inline-block;
+}
+.navimagecontainer{
+	float:right;
+	width:600px;
+	margin-right:10%;
 }
 
 .firstbutton{
-	margin-left:60px;
+	margin-left:40px;
 }
 
 .donate{
@@ -87,7 +92,7 @@ body{
 	font-size:30px;	
 	font-family:"Raleway",Helvetica,Arial,sans-serif;
 	color:white;
-	margin-right:10%;
+	margin-right:2%;
 	margin-top:30px;
 
 }
@@ -208,31 +213,21 @@ footer {
 	border-radius: 50%;
 }
 
-.heroimage{
-	height:600px;
-	width:100%;
-	margin-top:135px;
-	margin-left:0px;
-	background-image:url("homelesshero.jpg");
-	background-size:cover;
-	border-top:2px solid black;
-	border-bottom:2px solid black;
 
-}
 
 .footer-nav__item a:hover {
 	color: #ffbd46;
 }
 
 .articlescontainer{
-	height:500px;
+	width:100%;
 	margin-top:40px;
 	
 
 }
 .article1, .article2, .article3{
 	height:495px;
-	width:400px;
+	width:33%;
 	display:inline-block;
 	
 	border-radius:10px;
@@ -248,10 +243,10 @@ footer {
 	display:block;
 }
 .artpic1, .artpic2, .artpic3{
-	height:200px;
+	height:150px;
 	width:100%;
 	background-color:green;
-	background-size:cover;
+	background-size:100% 100%;
 	border:2px solid black;
 	border-radius:10px;
 
@@ -266,7 +261,7 @@ footer {
 	background-image:url("http://www.coalitionforthehomeless.org/wp-content/uploads/2014/03/ProvenSolutions7.jpg");
 }
 .arttext1, .arttext2, .arttext3{
-	height:200px;
+	
 	width:100%;
 	border:2px solid black;
 	border-radius:10px;
@@ -287,10 +282,25 @@ footer {
 
 .slideshowcontainer{
 	height:400px;
-	width:50%;
-	border:2px solid black;
+	width:768px;
+	border:2px solid orange;
 	margin:0 auto;
 }
+
+.heroimage{
+	background-image:url("homelesshero.jpg");
+	height:600px;
+	margin-right:0px;
+	margin-top:135px;
+	margin-left:0px;
+
+	background-size:100% 100%;
+	border-top:2px solid black;
+	border-bottom:2px solid black;
+
+
+}
+
 .myslides{
 	
 }
@@ -324,6 +334,7 @@ footer {
 .slideshow{
 	width:100%;
 	height:400px;
+	margin:0 auto;
 }
 
 .fullartexp{
@@ -351,6 +362,70 @@ footer {
 	border: 1px solid black;
 	border-radius: 3px;
 }
+@media all and (min-width:1200px){
+	.article1, .article2, .article3{
+		width:33%;
+		
+		
+	}
+	.artpic1, .artpic2, .artpic3{
+		height:200px;
+	}
+	
+	
+}
+@media all and (min-width:768px) and (max-width:979px){
+	
+.article1, .article2, .article3{
+		width:33%;
+		min-width:150px;
+		
+	}
+	.artpic1, .artpic2, .artpic3{
+		height:150px;
+	}
+
+
+.articlescontainer{
+	height:550px;
+	/*min-width:450px;*/
+}
+
+
+}
+@media all and (max-width:767px){
+.article1, .article2, .article3{
+		width:33%;
+		
+		
+	}
+	.heroimage{
+		height:400px;
+	width:768px;
+	border:2px solid orange;
+	margin:0 auto;
+	}
+	.artpic1, .artpic2, .artpic3{
+		height:150px;
+	}
+	
+.articlescontainer{
+	width:768px;
+	
+}
+.arttext{
+	padding:0;
+}
+.fullartexp{
+	text-align:center;
+}
+.articlespacer{
+	width:768px;
+}
+footer{
+	width:768px;
+}
+
 
 .donate-form__container {
 	height: 600px;
@@ -367,7 +442,7 @@ footer {
 	border: none;
 }
 
-
+}
 
 /* Extra Wide Desktops*/
 @media all and (min-width: 1200px) {
@@ -450,4 +525,5 @@ footer {
 	}
 
 }
+
 
