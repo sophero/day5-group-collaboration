@@ -77,7 +77,7 @@ body{
 }
 .navimagecontainer{
 	float:right;
-	/*width:600px;*/
+	width:600px;
 	margin-right:10%;
 }
 
@@ -555,7 +555,7 @@ footer {
 
 /* Phone in landscape mode, small tablet */
 @media all and (max-width: 767px) {
-<<<<<<< HEAD
+
 	.heroimage{
 		width:100%;
 	}
