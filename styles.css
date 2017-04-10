@@ -38,6 +38,9 @@ body{
 	text-align:center;
 	color:grey;
 }
+.hambutton{
+	display:none;
+}
 .navbar{
 	height:135px;
 	padding-bottom:15px;
@@ -141,6 +144,10 @@ body{
 	background-size: cover;
 	border-radius: 5%;
 }
+.hambutton, .nohambutton{
+	background-image:url("hamburgerbutton.PNG");
+	background-size:cover;
+}
 .article-link p{
 	margin: 0;
 }
@@ -162,6 +169,9 @@ article {
 	margin: 10px;
 	border: 1px solid black;
 	padding: 10px;
+}
+.hamhidden{
+	display:none;
 }
 
 a {
@@ -273,6 +283,9 @@ footer {
 
 	
 }
+.nohambutton{
+	display:none;
+}
 .articlespacer{
 	height:200px;
 	text-align:center;
@@ -282,7 +295,9 @@ footer {
 	text-decoration:none;
 	color:black;
 }
-
+.logo2{
+	display:none;
+}
 .slideshowcontainer{
 	height:400px;
 	width:768px;
@@ -325,7 +340,10 @@ footer {
 	
 
 }
-
+.hiddenmobile{
+	display:none;
+	height:50px;
+}
 	
 
 
@@ -404,11 +422,22 @@ footer {
 	.artpic1, .artpic2, .artpic3{
 		height:200px;
 	}
+
+}
+@media all and (min-width:1100px) and (max-width:1199px){
 	
-	
+	.button{
+		/*float:right;*/
+	}
+
 }
 @media all and (min-width:768px) and (max-width:979px){
-	
+	.navimagecontainer{
+		
+	}
+	.button{
+		/*float:right;*/
+	}
 	.article1, .article2, .article3{
 		width:33%;
 		min-width:150px;
@@ -430,10 +459,13 @@ footer {
 	.article1, .article2, .article3{
 		width:33%;
 	}
+	.button{
+		/*float:right;*/
+	}
 	.heroimage{
 		height:400px;
 		width:768px;
-		border:2px solid orange;
+		
 		margin:0 auto;
 	}
 	.artpic1, .artpic2, .artpic3{
@@ -494,7 +526,12 @@ footer {
 
 /* Phone in landscape mode, small tablet */
 @media all and (max-width: 767px) {
-
+	.heroimage{
+		width:100%;
+	}
+	.navcontainer{
+		width:100%;
+	}
 	.sidebar p{
 		display: none;
 	}
@@ -555,6 +592,59 @@ footer {
 	.article-container article{
 		width: 100%;
 		margin: 10px;
+	}
+	
+	.navimagecontainer{
+		display:none;
+	}
+	.navbar{
+		display:none;
+	}
+	.index1, .blog1, .about1{
+		
+		
+		padding: 0px 0px 0px 0px;
+	}
+	.button{
+		float:none;
+		margin-left:0px;
+	}
+	.hambutton{
+		display:block;
+	}
+	.hiddenmobile{
+		display:block;
+	}
+	.hamhidden{
+		padding: 0px 0px 0px 0px;
+		height:150px;
+		border:2px solid orange;
+		width:100px;
+	}
+	.heroimage{
+		width:100%;
+	}
+	body{
+		margin-top:0px;
+	}
+	.hambutton{
+		width:30px;
+		height:30px;
+		margin-right:0px;
+	}
+	.nohambutton{
+		width:30px;
+		height:30px;
+		margin-right:0px;
+	}
+
+	.logo2{
+		display:inline-block;
+		background-image:url("homeless.PNG");
+		background-size:cover;
+		width:50px;
+		height:50px;
+		float:right;
 	}
 
 }
