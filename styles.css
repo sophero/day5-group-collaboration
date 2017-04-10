@@ -390,12 +390,23 @@ footer {
 	height: 600px;
 }
 
-.donate-form__container {
-	height: 600px;
+.donate-form__input-button {
+	color: #eb9800;
+	background-color: #000;
+	border: 2px solid black;
+	border-radius: 2px;
+	width: 110px;
+	height: 40px;
+	font-size: 1em;
+	margin: 10px 20px;
+}
+
+.donate-form__input-button:hover {
+	color: #ffbd46;
 }
 
 .do-amount__container {
-	width: 220px;
+	width: 200px;
 	padding: 10px 20px;
 	border: 1px solid #cbcbcb;
 	border-radius: 2px;
@@ -403,6 +414,11 @@ footer {
 
 .do-amount__input {
 	border: none;
+	line-height: 30px;
+	width: 100px;
+	margin: 0 5px;
+	text-align: center;
+	font-size: 0.8em;
 }
 
 .do-amount__container {
