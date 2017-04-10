@@ -74,7 +74,7 @@ body{
 }
 .navimagecontainer{
 	float:right;
-	width:600px;
+	/*width:600px;*/
 	margin-right:10%;
 }
 
@@ -175,8 +175,6 @@ a {
 
 footer {
 	margin: 0;
-	position: absolute;
-	bottom: 0;
 	background-color: #000;
 	width: 100vw;
 	height: 50px;
@@ -223,7 +221,7 @@ footer {
 }
 
 .articlescontainer{
-	width:100%;
+	/*width:100%;*/
 	margin-top:40px;
 	
 
@@ -231,6 +229,7 @@ footer {
 .article1, .article2, .article3{
 	height:495px;
 	width:33%;
+	/*min-width: 320px;*/
 	display:inline-block;
 	
 	border-radius:10px;
@@ -247,7 +246,7 @@ footer {
 }
 .artpic1, .artpic2, .artpic3{
 	height:150px;
-	width:100%;
+	/*width:100%;*/
 	background-color:green;
 	background-size:100% 100%;
 	border:2px solid black;
@@ -265,7 +264,7 @@ footer {
 }
 .arttext1, .arttext2, .arttext3{
 	
-	width:100%;
+	/*width:100%;*/
 	border:2px solid black;
 	border-radius:10px;
 	padding:10px 30px 10px 30px;
@@ -285,7 +284,6 @@ footer {
 
 .slideshowcontainer{
 	height:400px;
-	width:768px;
 	border:2px solid orange;
 	margin:0 auto;
 }
@@ -315,12 +313,12 @@ footer {
 .slide1{
 	background-image:url("philly-homeless-01.jpg");
 	display:none;
-	width:100%;
+	/*width:100%;*/
 }
 .slide2{
 	background-image:url("philly-homeless-02.jpg");
 	display:none;
-	width:100%;
+	/*width:100%;*/
 	left:0px;
 	
 
@@ -332,10 +330,10 @@ footer {
 .slide3{
 	background-image:url("philly-homeless-03.jpg");
 	display:none;
-	width:100%;
+	/*width:100%;*/
 }
 .slideshow{
-	width:100%;
+	/*width:100%;*/
 	height:400px;
 	margin:0 auto;
 }
@@ -397,7 +395,6 @@ footer {
 
 	.articlescontainer{
 		height:550px;
-		/*min-width:450px;*/
 	}
 
 
@@ -408,7 +405,6 @@ footer {
 	}
 	.heroimage{
 		height:400px;
-		width:768px;
 		border:2px solid orange;
 		margin:0 auto;
 	}
@@ -417,7 +413,6 @@ footer {
 	}
 		
 	.articlescontainer{
-		width:768px;
 		
 	}
 	.arttext{
@@ -427,7 +422,6 @@ footer {
 		text-align:center;
 	}
 	.articlespacer{
-		width:768px;
 	}
 
 	.donate-form__container {
@@ -435,7 +429,6 @@ footer {
 	}
 
 	.do-amount__container {
-		width: 220px;
 		padding: 10px 20px;
 		border: 1px solid #cbcbcb;
 		border-radius: 2px;
@@ -470,7 +463,10 @@ footer {
 
 /* Phone in landscape mode, small tablet */
 @media all and (max-width: 767px) {
-
+	.articlescontainer div{
+		display: block;
+		width: 100%;
+	}
 	.sidebar p{
 		display: none;
 	}
@@ -496,6 +492,16 @@ footer {
 
 	.article-container article{
 	    margin: 10px 26% 10px 4%;
+	}
+
+	.arttext{
+		display: none;
+	}
+	.article1, .article2, .article3{
+		float: none;
+		max-width: 375px;
+		height: auto;
+		margin: 0 auto;
 	}
 
 	footer {
