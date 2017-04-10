@@ -350,6 +350,21 @@ footer {
 	border-radius: 3px;
 }
 
+.donate-form__container {
+	height: 600px;
+}
+
+.do-amount__container {
+	width: 220px;
+	padding: 10px 20px;
+	border: 1px solid #cbcbcb;
+	border-radius: 2px;
+}
+
+.do-amount__input {
+	border: none;
+}
+
 
 
 /* Extra Wide Desktops*/
