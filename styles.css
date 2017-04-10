@@ -238,7 +238,8 @@ a {
 
 }
 .article1, .article2, .article3{
-	height: 388px;
+
+	height:420px;
 	width:33%;
 	display:inline-block;
 	
