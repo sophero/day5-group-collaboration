@@ -370,9 +370,7 @@ footer {
 	.artpic1, .artpic2, .artpic3{
 		height:200px;
 	}
-	body{
-		background-color:blue;
-	}
+	
 	
 }
 @media all and (min-width:768px) and (max-width:979px){
@@ -385,9 +383,7 @@ footer {
 	.artpic1, .artpic2, .artpic3{
 		height:150px;
 	}
-	body{
-		background-color:orange;
-	}
+
 
 .articlescontainer{
 	height:550px;
