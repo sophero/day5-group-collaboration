@@ -229,7 +229,7 @@ footer {
 
 }
 .article1, .article2, .article3{
-	height:495px;
+	height:33%;
 	width:33%;
 	display:inline-block;
 	
@@ -270,7 +270,7 @@ footer {
 	border-radius:10px;
 	padding:10px 30px 10px 30px;
 	margin-top:0px;
-
+	overflow: hidden;
 	
 }
 .articlespacer{
@@ -388,6 +388,37 @@ footer {
 	background-image: url("about6.jpg");
 }
 
+.donate-form__container {
+	height: 600px;
+}
+
+.donate-form__container {
+	height: 600px;
+}
+
+.do-amount__container {
+	width: 220px;
+	padding: 10px 20px;
+	border: 1px solid #cbcbcb;
+	border-radius: 2px;
+}
+
+.do-amount__input {
+	border: none;
+}
+
+.do-amount__container {
+	width: 220px;
+	padding: 10px 20px;
+	border: 1px solid #cbcbcb;
+	border-radius: 2px;
+}
+
+.do-amount__input {
+	border: none;
+}
+
+
 .bottom-article-spacer {
 	clear: both;
 	height: 70px;
@@ -451,36 +482,6 @@ footer {
 	}
 	.articlespacer{
 		width:768px;
-	}
-
-	.donate-form__container {
-		height: 600px;
-	}
-
-	.donate-form__container {
-		height: 600px;
-	}
-
-	.do-amount__container {
-		width: 220px;
-		padding: 10px 20px;
-		border: 1px solid #cbcbcb;
-		border-radius: 2px;
-	}
-
-	.do-amount__input {
-		border: none;
-	}
-
-	.do-amount__container {
-		width: 220px;
-		padding: 10px 20px;
-		border: 1px solid #cbcbcb;
-		border-radius: 2px;
-	}
-
-	.do-amount__input {
-		border: none;
 	}
 
 	.about-gallery__container {
