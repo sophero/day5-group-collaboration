@@ -148,6 +148,7 @@ body{
 }
 
 article {
+    margin: 10px 26% 10px 4%;
 	width: 70%;
 	max-width: 700px;
 	margin: 10px;
@@ -370,7 +371,12 @@ footer {
 
 /* Extra Wide Desktops*/
 @media all and (min-width: 1200px) {
-
+	article {
+		margin-left: calc(50% - 450px);
+	}
+	.sidebar{
+		right:calc(50% - 475px);;
+	}
 }
 
 @media all and (min-width: 768px) and (max-width: 979px){
