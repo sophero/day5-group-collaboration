@@ -149,6 +149,7 @@ body{
 
 article {
 	width: 70%;
+	max-width: 700px;
 	margin: 10px;
 	border: 1px solid black;
 	padding: 10px;
@@ -372,8 +373,40 @@ footer {
 
 }
 
+@media all and (min-width: 768px) and (max-width: 979px){
+
+}
+
+
 /* Phone in landscape mode, small tablet */
 @media all and (max-width: 767px) {
+
+	.sidebar p{
+		display: none;
+	}
+
+	.sidebar {
+	position: fixed;
+	right: 5px;
+	top: 133px;
+	width: 120px;
+	}
+
+	.sidebar .article-pic{
+		width: 120px;
+	}
+
+	.article-link {
+	margin: 5px auto;
+	width: 120px;
+	border: none;
+	border-radius: 5%;
+	transition: all 0.8s;
+	}
+
+	.article-container article{
+    margin: 10px 26% 10px 4%;
+	}
 
 	footer {
 		height: 86px;
@@ -402,6 +435,13 @@ footer {
 
 /* Smaller Phone, phone in portrait mode */
 @media all and (max-width: 480px) {
+	.sidebar {
+		display: none;
+	}
+	.article-container article{
+		width: 100%;
+		margin: 10px;
+	}
 
 }
 
