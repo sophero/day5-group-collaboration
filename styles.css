@@ -238,7 +238,7 @@ a {
 
 }
 .article1, .article2, .article3{
-	height:33%;
+	height:420px;
 	width:33%;
 	display:inline-block;
 	
@@ -561,6 +561,7 @@ a {
 	}
 	.navcontainer{
 		width:100%;
+	}
 
 	.articlescontainer div{
 		display: block;
