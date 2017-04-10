@@ -141,6 +141,9 @@ body{
 	background-size: cover;
 	border-radius: 5%;
 }
+.article-link p{
+	margin: 0;
+}
 
 .article-1-pic {
 	background-image: url("https://img.rt.com/files/2016.03/original/56f52214c46188a2438b4587.jpg");
