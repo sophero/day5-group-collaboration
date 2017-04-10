@@ -141,6 +141,9 @@ body{
 	background-size: cover;
 	border-radius: 5%;
 }
+.article-link p{
+	margin: 0;
+}
 
 .article-1-pic {
 	background-image: url("https://img.rt.com/files/2016.03/original/56f52214c46188a2438b4587.jpg");
@@ -153,6 +156,7 @@ body{
 }
 
 article {
+    margin: 10px 26% 10px 4%;
 	width: 70%;
 	max-width: 700px;
 	margin: 10px;
@@ -362,6 +366,34 @@ footer {
 	border-radius: 3px;
 }
 
+.about-gallery__item{
+	background-size:cover;
+}
+.about-pic1{
+	background-image: url("about1.jpg");
+}
+.about-pic2{
+	background-image: url("about2.jpg");
+}
+.about-pic3{
+	background-image: url("about3.jpg");
+}
+.about-pic4{
+	background-image: url("about4.jpg");
+}
+.about-pic5{
+	background-image: url("about5.jpg");
+}
+.about-pic6{
+	background-image: url("about6.jpg");
+}
+
+.bottom-article-spacer {
+	clear: both;
+	height: 70px;
+}
+
+
 @media all and (min-width:1200px){
 	.article1, .article2, .article3{
 		width:33%;
@@ -394,16 +426,14 @@ footer {
 
 }
 @media all and (max-width:767px){
-.article1, .article2, .article3{
+	.article1, .article2, .article3{
 		width:33%;
-		
-		
 	}
 	.heroimage{
 		height:400px;
-	width:768px;
-	border:2px solid orange;
-	margin:0 auto;
+		width:768px;
+		border:2px solid orange;
+		margin:0 auto;
 	}
 	.artpic1, .artpic2, .artpic3{
 		height:150px;
@@ -423,6 +453,9 @@ footer {
 		width:768px;
 	}
 
+	.donate-form__container {
+		height: 600px;
+	}
 
 	.donate-form__container {
 		height: 600px;
@@ -439,14 +472,36 @@ footer {
 		border: none;
 	}
 
+	.do-amount__container {
+		width: 220px;
+		padding: 10px 20px;
+		border: 1px solid #cbcbcb;
+		border-radius: 2px;
+	}
+
+	.do-amount__input {
+		border: none;
+	}
+
+	.about-gallery__container {
+		width: 90%;
+		margin: 20px auto 0 auto;
+		padding-bottom: 110px;
+	}
+
+	.bottom-article-spacer {
+		clear: both;
+		height: 110px;
+	}
 }
 /* Extra Wide Desktops*/
 @media all and (min-width: 1200px) {
-
-}
-
-@media all and (min-width: 768px) and (max-width: 979px){
-
+	article {
+		margin-left: calc(50% - 450px);
+	}
+	.sidebar{
+		right:calc(50% - 475px);;
+	}
 }
 
 
@@ -458,10 +513,10 @@ footer {
 	}
 
 	.sidebar {
-	position: fixed;
-	right: 5px;
-	top: 133px;
-	width: 120px;
+		position: fixed;
+		right: 5px;
+		top: 133px;
+		width: 120px;
 	}
 
 	.sidebar .article-pic{
@@ -469,15 +524,15 @@ footer {
 	}
 
 	.article-link {
-	margin: 5px auto;
-	width: 120px;
-	border: none;
-	border-radius: 5%;
-	transition: all 0.8s;
+		margin: 5px auto;
+		width: 120px;
+		border: none;
+		border-radius: 5%;
+		transition: all 0.8s;
 	}
 
 	.article-container article{
-    margin: 10px 26% 10px 4%;
+	    margin: 10px 26% 10px 4%;
 	}
 
 	footer {
