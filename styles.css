@@ -271,7 +271,7 @@ footer {
 	border-radius:10px;
 	padding:10px 30px 10px 30px;
 	margin-top:0px;
-
+	overflow: hidden;
 	
 }
 .articlespacer{
