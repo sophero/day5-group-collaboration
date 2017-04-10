@@ -155,7 +155,7 @@ body{
 	background-image: url("http://www.coalitionforthehomeless.org/wp-content/uploads/2014/03/ProvenSolutions7.jpg");
 }
 
-article {
+.article {
     margin: 10px 26% 10px 4%;
 	width: 70%;
 	max-width: 700px;
@@ -173,7 +173,7 @@ a {
 	text-align: center;
 }
 
-footer {
+.footer {
 	margin: 0;
 	background-color: #000;
 	width: 100vw;
@@ -507,7 +507,7 @@ footer {
 }
 /* Extra Wide Desktops*/
 @media all and (min-width: 1200px) {
-	article {
+	.article {
 		margin-left: calc(50% - 450px);
 	}
 	.sidebar{
@@ -545,7 +545,7 @@ footer {
 		transition: all 0.8s;
 	}
 
-	.article-container article{
+	.article{ 
 	    margin: 10px 26% 10px 4%;
 	}
 
@@ -559,7 +559,7 @@ footer {
 		margin: 0 auto;
 	}
 
-	footer {
+	.footer {
 		height: 86px;
 		border-left: none;
 		border-right: none;
@@ -589,7 +589,7 @@ footer {
 	.sidebar {
 		display: none;
 	}
-	.article-container article{
+	.article{
 		width: 100%;
 		margin: 10px;
 	}
