@@ -5,23 +5,91 @@
 	<link rel=“stylesheet” type=“text/css” href=“https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css“>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript">
+		function MyFunction(){
+				document.getElementById("slide1").style.display="block";
+				document.getElementById("slide3").style.display="none";
+				setTimeout(function(){
+    			SecondFunction();
+				}, 4000);
+			}
+		function SecondFunction(){
+			document.getElementById("slide2").style.display="block";
+			document.getElementById("slide1").style.display="none";
+			setTimeout(function(){
+    			ThirdFunction();
+				}, 4000);
+		}
+		function ThirdFunction(){
+			document.getElementById("slide3").style.display="block";
+			document.getElementById("slide2").style.display="none";
+			setTimeout(function(){
+    			MyFunction();
+				}, 4000);
+		}
+	</script>
+	<script type="text/javascript">
+		
+		function HamburgerFunction(){
+			document.getElementById("hamhidden").style.display="block";
+			IndexFunction();
+		}
+
+		function IndexFunction(){
+			document.getElementById("index").style.display="block";
+			BlogFunction();
+		}
+		
+		function BlogFunction(){
+			document.getElementById("blog").style.display="block";
+			AboutFunction();
+		}
+		
+		function AboutFunction(){
+			document.getElementById("about").style.display="block";
+			ButtonGoAway()
+		}
+		function ButtonGoAway(){
+			document.getElementById("nohambutton").style.display="inline-block";
+			document.getElementById("hambutton").style.display="none";
+		}
+	</script>
+	<script type="text/javascript">
+		function GoAwayFunction(){
+			document.getElementById("hambutton").style.display="inline-block";
+			document.getElementById("hamhidden").style.display="none";
+			document.getElementById("nohambutton").style.display="none";
+		}
+	</script>
 </head>
-<body>
+<body onload="MyFunction()">
 	<div class="navbar">
 		<div class="navimagecontainer">
-		<a href="donate.html">
-			<div class="donate">
-				<p class="donatebutton">Donate</p>
+			<a href="donate.html">
+				<div class="donate">
+					<p class="donatebutton">Donate</p>
+				</div>
+			</a>
+			<a href="index.html">
+				<div class="logo"></div>
+			</a>
+			<div id="hamburgercontainer" class="hamburgercontainer">
+				<span id="index" class="index"><a class="button firstbutton" href="index.html">Home</a></span>
+				<span id="blog" class="blog"><a class="button" href="blog.html">Blog</a></span>
+				<span id="about" class="about"><a class="button" href="about.html">About</a></span>
 			</div>
-		</a>
-		<a href="index.html">
-			<div class="logo"></div>			
-		</a>
-		<span class="index"><a class="button firstbutton" href="index.html">Home</a></span>
-		<span class="blog"><a class="button" href="blog.html">Blog</a></span>
-		<span class="about"><a class="button" href="about.html">About</a></span>
-		
 		</div>
+	</div>
+	<div class="hiddenmobile">
+		<div class="logo2"></div>
+		<button onclick="HamburgerFunction()" class="hambutton" id="hambutton"></button>
+		<button onclick="GoAwayFunction()" class="nohambutton" id="nohambutton"></button>
+	</div>
+	<div id="hamhidden" class="hamhidden">
+
+		<div id="index" class="index1"><a class="button firstbutton" href="index.html">Home</a></div>
+		<div id="blog" class="blog1"><a class="button" href="blog.html">Blog</a></div>
+		<div id="about" class="about1"><a class="button" href="about.html">About</a></div>
 	</div>
 	<div class="sidebar">
 		<a href="#1">
@@ -113,7 +181,6 @@
 					</p>
 				</div>
 			</article>
-
 		</div>
 		<div class="bottom-article-spacer"></div>
 	</main>
@@ -133,7 +200,6 @@
 					<a href="donate.html">Donate</a>
 				</div>
 			</div>
-				
 			<div class="footer__social__container">
 				<a href="https://www.facebook.com/homeaidoc" target="_blank">
 					<div class="footer__social__item" id="facebook"></div>
