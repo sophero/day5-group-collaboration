@@ -49,6 +49,8 @@ body{
 	width:100%;
 	background-color:white;
 	top:0px;
+	display: flex;
+	justify-content: center;
 }
 .button{
 	text-decoration:none;
@@ -72,13 +74,11 @@ body{
 	width:125px;
 	background-image:url("homeless.PNG");
 	background-size:100% 100%;
-	
 	display:inline-block;
 }
 .navimagecontainer{
 	float:right;
 	width:600px;
-	margin-right:10%;
 }
 
 .firstbutton{
@@ -291,7 +291,7 @@ a {
 .articlespacer{
 	height:200px;
 	text-align:center;
-	padding-top:130px;
+	padding-top:100px;
 }
 .articlelink{
 	text-decoration:none;
@@ -587,8 +587,8 @@ a {
 	.articlescontainer div{
 		display: block;
 		width: 100%;
-
 	}
+
 	.sidebar p{
 		display: none;
 	}
