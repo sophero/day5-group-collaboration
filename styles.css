@@ -38,6 +38,9 @@ body{
 	text-align:center;
 	color:grey;
 }
+.hambutton{
+	display:none;
+}
 .navbar{
 	height:135px;
 	padding-bottom:15px;
@@ -74,7 +77,7 @@ body{
 }
 .navimagecontainer{
 	float:right;
-	/*width:600px;*/
+	width:600px;
 	margin-right:10%;
 }
 
@@ -141,6 +144,10 @@ body{
 	background-size: cover;
 	border-radius: 5%;
 }
+.hambutton, .nohambutton{
+	background-image:url("hamburgerbutton.PNG");
+	background-size:cover;
+}
 .article-link p{
 	margin: 0;
 }
@@ -155,13 +162,16 @@ body{
 	background-image: url("http://www.coalitionforthehomeless.org/wp-content/uploads/2014/03/ProvenSolutions7.jpg");
 }
 
-article {
+.article {
     margin: 10px 26% 10px 4%;
 	width: 70%;
 	max-width: 700px;
 	margin: 10px;
 	border: 1px solid black;
 	padding: 10px;
+}
+.hamhidden{
+	display:none;
 }
 
 a {
@@ -173,7 +183,7 @@ a {
 	text-align: center;
 }
 
-footer {
+.footer {
 	margin: 0;
 	background-color: #000;
 	width: 100vw;
@@ -228,7 +238,8 @@ footer {
 
 }
 .article1, .article2, .article3{
-	height:33%;
+
+	height:420px;
 	width:33%;
 	display:inline-block;
 	
@@ -247,7 +258,8 @@ footer {
 .artpic1, .artpic2, .artpic3{
 	height:150px;
 	background-color:green;
-	background-size:100% 100%;
+	background-size: cover;
+	background-position: center;
 	border:2px solid black;
 	border-radius:10px;
 
@@ -266,8 +278,15 @@ footer {
 	border-radius:10px;
 	padding:10px 30px 10px 30px;
 	margin-top:0px;
-	/*overflow: hidden;*/
+	overflow: hidden;
 	
+	margin-top:0px;	
+	height: 200px;
+	overflow: hidden;
+}
+.nohambutton{
+	display:none;
+
 }
 .articlespacer{
 	height:200px;
@@ -278,7 +297,9 @@ footer {
 	text-decoration:none;
 	color:black;
 }
-
+.logo2{
+	display:none;
+}
 .slideshowcontainer{
 	height:400px;
 	border:2px solid orange;
@@ -293,7 +314,8 @@ footer {
 	margin-top:135px;
 	margin-left:auto;
 
-	background-size:100% 100%;
+	background-size: cover;
+	background-position: top;
 	border-top:2px solid black;
 	border-bottom:2px solid black;
 
@@ -304,7 +326,8 @@ footer {
 	
 }
 .slide1, .slide2, .slide3{
-	background-size:100% 100%;
+	background-size: cover;
+	background-position: center;
 	margin:0 auto;
 	height:397px;
 }
@@ -319,7 +342,10 @@ footer {
 	
 
 }
-
+.hiddenmobile{
+	display:none;
+	height:50px;
+}
 	
 
 
@@ -352,8 +378,14 @@ footer {
 
 .about-gallery__item {
 	width: 25vw;
+	min-width: 220px;
 	height: 30vw;
+<<<<<<< HEAD
 	margin: 25px auto;
+=======
+	min-height: 180px;
+	margin: 25px 15px;
+>>>>>>> 45e675a4dd8a71753f81d243469ca62a96dffc7d
 	background-position: center;
 	background-size: cover;
 	border: 1px solid black;
@@ -385,15 +417,33 @@ footer {
 }
 
 .donate-form__container {
-	height: 600px;
+	height: 500px;
+	padding-top: 20px;
+	text-align: center;
 }
 
-.donate-form__container {
-	height: 600px;
+.donate-form__input-button {
+	color: #eb9800;
+	background-color: #000;
+	border: 2px solid black;
+	border-radius: 2px;
+	width: 110px;
+	height: 40px;
+	font-size: 1em;
+	margin: 10px 20px;
+}
+
+.donate-form {
+	margin: 10px auto;
+}
+
+.donate-form__input-button:hover {
+	color: #ffbd46;
 }
 
 .do-amount__container {
-	width: 220px;
+	display: inline-block;
+	width: 200px;
 	padding: 10px 20px;
 	border: 1px solid #cbcbcb;
 	border-radius: 2px;
@@ -401,30 +451,28 @@ footer {
 
 .do-amount__input {
 	border: none;
-}
-
-.do-amount__container {
-	width: 220px;
-	padding: 10px 20px;
-	border: 1px solid #cbcbcb;
-	border-radius: 2px;
+	line-height: 30px;
+	width: 100px;
+	margin: 0 5px;
+	text-align: center;
+	font-size: 0.8em;
 }
 
 .do-amount__input {
 	border: none;
-}
-
-
-.bottom-article-spacer {
-	clear: both;
-	height: 70px;
 }
 
 .donateImage {
+	margin: 0 auto;
 	width: 300px;
 	height: 200px;
 	background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJbmnl65Kt1zn6xckVScDun084U_0QcVoF5asBoUaaogAJPFE6");
 	background-size: 100% 100%;
+}
+
+.bottom-article-spacer {
+	clear: both;
+	height: 70px;
 }
 
 @media all and (min-width:1200px){
@@ -436,9 +484,9 @@ footer {
 	.artpic1, .artpic2, .artpic3{
 		height:200px;
 	}
-	
-	
+
 }
+
 @media all and (min-width:768px) and (max-width:979px){
 	
 	.article1, .article2, .article3{
@@ -461,9 +509,17 @@ footer {
 	.article1, .article2, .article3{
 		width:33%;
 	}
+	.button{
+		/*float:right;*/
+	}
 	.heroimage{
 		height:400px;
+
+		width:768px;
+		
+
 		border:2px solid orange;
+
 		margin:0 auto;
 	}
 	.artpic1, .artpic2, .artpic3{
@@ -509,7 +565,7 @@ footer {
 }
 /* Extra Wide Desktops*/
 @media all and (min-width: 1200px) {
-	article {
+	.article {
 		margin-left: calc(50% - 450px);
 	}
 	.sidebar{
@@ -520,9 +576,18 @@ footer {
 
 /* Phone in landscape mode, small tablet */
 @media all and (max-width: 767px) {
+
+	.heroimage{
+		width:100%;
+	}
+	.navcontainer{
+		width:100%;
+	}
+
 	.articlescontainer div{
 		display: block;
 		width: 100%;
+
 	}
 	.sidebar p{
 		display: none;
@@ -547,7 +612,7 @@ footer {
 		transition: all 0.8s;
 	}
 
-	.article-container article{
+	.article{ 
 	    margin: 10px 26% 10px 4%;
 	}
 
@@ -561,7 +626,7 @@ footer {
 		margin: 0 auto;
 	}
 
-	footer {
+	.footer {
 		height: 86px;
 		border-left: none;
 		border-right: none;
@@ -591,9 +656,62 @@ footer {
 	.sidebar {
 		display: none;
 	}
-	.article-container article{
+	.article{
 		width: 100%;
 		margin: 10px;
+	}
+	
+	.navimagecontainer{
+		display:none;
+	}
+	.navbar{
+		display:none;
+	}
+	.index1, .blog1, .about1{
+		
+		
+		padding: 0px 0px 0px 0px;
+	}
+	.button{
+		float:none;
+		margin-left:0px;
+	}
+	.hambutton{
+		display:block;
+	}
+	.hiddenmobile{
+		display:block;
+	}
+	.hamhidden{
+		padding: 0px 0px 0px 0px;
+		height:150px;
+		border:2px solid orange;
+		width:100px;
+	}
+	.heroimage{
+		width:100%;
+	}
+	body{
+		margin-top:0px;
+	}
+	.hambutton{
+		width:30px;
+		height:30px;
+		margin-right:0px;
+	}
+	.nohambutton{
+		width:30px;
+		height:30px;
+		margin-right:0px;
+	}
+
+	.logo2{
+		display:inline-block;
+		background-image:url("homeless.PNG");
+		background-size:cover;
+		width:50px;
+		height:50px;
+		float:right;
 	}
 
 }
